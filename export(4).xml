@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<streams>
+    <stream>
+        <streamname value="weather"></streamname>
+        <streamsource value="/home/urg/IIITB/DM/jaxb/weather_demo.csv"></streamsource>
+        <window>
+            <windowsize value="10"></windowsize>
+            <windowvelocity value="5"></windowvelocity>
+            <windowtype value="Sliding Window"></windowtype>
+        </window>
+        <properties>        
+            <property>
+                <name value="MinTemp"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="MaxTemp"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="Rainfall"></name>
+                <type value="varchar(100)"></type>
+            </property>
+                        <property>
+                <name value="Evaporation"></name>
+                <type value="varchar(100)"></type>
+            </property>
+                        <property>
+                <name value="Sunshine"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="WindGustDir"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="WindGustSpeed"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="WindDir9am"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="WindDir3pm"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="WindSpeed9am"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="WindSpeed3pm"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Humidity9am"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Humidity3pm"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Pressure9am"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Pressure3pm"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Cloud9am"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Cloud3pm"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Temp9am"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="Temp3pm"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="RainToday"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="RISK_MM"></name>
+                <type value="varchar(100)"></type>
+            </property>
+             <property>
+                <name value="RainTomorrow"></name>
+                <type value="varchar(100)"></type>
+            </property>
+        </properties>
+        <continous_queries>
+            <query value="select * from weather"></query>
+        </continous_queries>
+    </stream>
+    <stream>
+        <streamname value="stocks"></streamname>
+        <streamsource value="/home/urg/IIITB/DM/jaxb/SAP_demo.csv"></streamsource>
+        <window>
+            <windowsize value="10"></windowsize>
+            <windowvelocity value="5"></windowvelocity>
+            <windowtype value="Sliding Window"></windowtype>
+        </window>
+        <properties>        
+            <property>
+                <name value="Date"></name>
+                <type value="date"></type>
+            </property>
+            <property>
+                <name value="Open"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="High"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="Low"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="Close"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="Adj_Close"></name>
+                <type value="varchar(100)"></type>
+            </property>
+            <property>
+                <name value="Volume"></name>
+                <type value="varchar(100)"></type>
+            </property>
+        </properties>
+        <continous_queries>
+            <query value="select * from stocks"></query>
+            <query value="select * from stocks"></query>
+        </continous_queries>
+    </stream>
+</streams>
